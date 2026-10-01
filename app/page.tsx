@@ -18,10 +18,10 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <WhatIBuild />
-        <WorkSection />
-        <LabSection />
         <TechStack />
+        {/* <WhatIBuild /> */}
+        <WorkSection />
+        {/* <LabSection /> */}
         <JourneySection />
         <CurrentlySection />
         <WritingSection />

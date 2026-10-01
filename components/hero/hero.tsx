@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Caveat } from "next/font/google";
-import { ArrowUpRight, ArrowDown, GraduationCap, Mail } from "lucide-react";
+import { ArrowUpRight, ArrowDown, Mail } from "lucide-react";
 import { site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
@@ -21,24 +21,6 @@ export function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-y-0 left-8 hidden w-px bg-border lg:block"
       />
-      <span className="mono pointer-events-none absolute top-32 left-11 hidden text-xs text-muted-foreground lg:block">
-        01
-      </span>
-
-      {/* decorative arc, bottom right */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-48 -bottom-48 hidden size-[560px] rounded-full border border-border lg:block"
-      >
-        <span className="absolute top-[16%] left-[-4px] size-2 rounded-full bg-signal" />
-      </div>
-      <div className="mono pointer-events-none absolute right-10 bottom-20 hidden flex-col items-end gap-1 text-right text-[11px] tracking-widest text-muted-foreground uppercase lg:flex">
-        <span>Ideas</span>
-        <span>+</span>
-        <span>Products</span>
-        <span>+</span>
-        <span>Impact</span>
-      </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-6 sm:px-8 lg:pl-20">
         <div className="grid gap-16 lg:grid-cols-[380px_1fr] lg:items-center lg:gap-16">
@@ -48,9 +30,9 @@ export function Hero() {
               <p
                 className={`${caveat.className} pointer-events-none absolute -left-16 bottom-14 hidden -rotate-6 text-xl leading-7 text-muted-foreground xl:block`}
               >
-                Build
-                <br />
                 Learn
+                <br />
+                Build
                 <br />
                 Ship
               </p>
@@ -68,18 +50,18 @@ export function Hero() {
                     sizes="(min-width: 1024px) 380px, 90vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
-                  <Link
+                  {/* <Link
                     href="/profile.jpg"
                     target="_blank"
                     aria-label="View full photo"
                     className="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full bg-background/50 text-foreground backdrop-blur-sm transition-colors hover:bg-background/70"
                   >
                     <ArrowUpRight className="size-4" />
-                  </Link>
-                  <span className="mono absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full border border-border bg-background/60 px-3 py-1.5 text-[11px] text-foreground backdrop-blur-sm">
+                  </Link> */}
+                  {/* <span className="mono absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full border border-border bg-background/60 px-3 py-1.5 text-[11px] text-foreground backdrop-blur-sm">
                     <span className="size-1.5 rounded-full bg-signal" />
                     {site.location}
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </div>
@@ -129,24 +111,6 @@ export function Hero() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap items-center gap-3 pt-1">
-                <Button
-                  render={<Link href="#work" />}
-                  size="lg"
-                  className="px-5"
-                >
-                  View my work →
-                </Button>
-                <Button
-                  render={<Link href={site.resume} />}
-                  variant="outline"
-                  size="lg"
-                  className="px-5"
-                >
-                  Resume ↗
-                </Button>
-              </div>
-
               <div className="flex flex-wrap items-center gap-6 pt-1">
                 <Link
                   href={site.github}
@@ -169,17 +133,26 @@ export function Hero() {
                   <Mail className="size-4" /> Email ↗
                 </Link>
               </div>
+
+              <div className="flex flex-wrap items-center gap-3 pt-1">
+                <Button
+                  render={<Link href="#work" />}
+                  size="lg"
+                  className="px-5"
+                >
+                  View my work →
+                </Button>
+                <Button
+                  render={<Link href={site.resume} />}
+                  variant="outline"
+                  size="lg"
+                  className="px-5"
+                >
+                  Resume ↗
+                </Button>
+              </div>
             </div>
           </Reveal>
-        </div>
-
-        <div className="mt-16 flex items-center gap-3 lg:mt-24">
-          <span className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground">
-            <ArrowDown className="size-4 animate-bounce motion-reduce:animate-none" />
-          </span>
-          <span className="mono text-xs tracking-widest text-muted-foreground uppercase">
-            Scroll to explore
-          </span>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { skills, skillCategories } from "@/data/skills";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Section } from "@/components/shared/section";
+import { TechIcon } from "@/components/shared/tech-icons";
 import { cn } from "@/lib/utils";
 
 type Filter = "All" | (typeof skillCategories)[number];
@@ -40,14 +41,15 @@ export function TechStack() {
         ))}
       </div>
 
-      <div className="mt-8 flex flex-wrap gap-2.5">
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {filtered.map((skill) => (
-          <span
+          <div
             key={skill.name}
-            className="rounded-full bg-card px-4 py-2 text-sm text-foreground/90 transition-colors hover:bg-muted"
+            className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card/60 px-4 py-6 text-center transition-colors duration-300 hover:border-foreground/15 hover:bg-card"
           >
-            {skill.name}
-          </span>
+            <TechIcon name={skill.name} />
+            <span className="text-sm text-foreground/90">{skill.name}</span>
+          </div>
         ))}
       </div>
     </Section>

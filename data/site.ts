@@ -1,12 +1,12 @@
 export const site = {
-  name: "Jayant Rao",
-  initials: "JR",
+  name: "Jayant",
+  initials: "J",
   role: "Full-Stack Developer & AI Builder",
   tagline: "Building software at the intersection of Web & AI.",
   eyebrow: "FULL-STACK DEVELOPER / AI BUILDER",
   summary:
     "I build full-stack applications, backend systems, and AI-powered products — turning ideas into useful software.",
-  location: "Based in India",
+  // location: "Based in India",
   availability: "OPEN TO COLLABORATION",
   currentFocus: "CURRENTLY BUILDING AI SYSTEMS",
   status: "Computer Science student · Available for collaboration",

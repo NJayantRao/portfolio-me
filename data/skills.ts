@@ -23,21 +23,11 @@ export const skills: Skill[] = [
 
   { name: "Node.js", category: "Backend" },
   { name: "Express", category: "Backend" },
-  { name: "REST APIs", category: "Backend" },
-  { name: "Authentication", category: "Backend" },
 
   { name: "PostgreSQL", category: "Database" },
-  { name: "Supabase", category: "Database" },
   { name: "MongoDB", category: "Database" },
-  { name: "Neon", category: "Database" },
-
-  { name: "LLMs", category: "AI" },
-  { name: "RAG", category: "AI" },
-  { name: "AI Agents", category: "AI" },
-  { name: "MCP", category: "AI" },
 
   { name: "Git", category: "Tools" },
   { name: "GitHub", category: "Tools" },
   { name: "Docker", category: "Tools" },
-  { name: "Linux", category: "Tools" },
 ];
