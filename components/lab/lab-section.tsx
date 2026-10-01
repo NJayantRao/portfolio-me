@@ -36,7 +36,9 @@ export function LabSection() {
                     <span
                       className={cn(
                         "size-1.5 rounded-full",
-                        exp.status === "active" ? "bg-signal" : "bg-muted-foreground/50"
+                        exp.status === "active"
+                          ? "bg-signal"
+                          : "bg-muted-foreground/50"
                       )}
                     />
                     {exp.status}

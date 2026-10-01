@@ -73,7 +73,13 @@ export function ContactSection() {
                 <ArrowUpRight className="size-4" />
               </Button>
               <Button
-                render={<a href={site.github} target="_blank" rel="noopener noreferrer" />}
+                render={
+                  <a
+                    href={site.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                }
                 variant="outline"
                 size="lg"
                 className="gap-1.5 px-5"
@@ -81,7 +87,13 @@ export function ContactSection() {
                 <GithubIcon className="size-4" /> GitHub
               </Button>
               <Button
-                render={<a href={site.linkedin} target="_blank" rel="noopener noreferrer" />}
+                render={
+                  <a
+                    href={site.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                }
                 variant="outline"
                 size="lg"
                 className="gap-1.5 px-5"
@@ -99,10 +111,17 @@ export function ContactSection() {
         </Reveal>
 
         <Reveal delay={180}>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4"
+            noValidate
+          >
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="name" className="mono text-xs text-muted-foreground uppercase">
+                <label
+                  htmlFor="name"
+                  className="mono text-xs text-muted-foreground uppercase"
+                >
                   Name
                 </label>
                 <input
@@ -114,7 +133,10 @@ export function ContactSection() {
                 />
               </div>
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="email" className="mono text-xs text-muted-foreground uppercase">
+                <label
+                  htmlFor="email"
+                  className="mono text-xs text-muted-foreground uppercase"
+                >
                   Email
                 </label>
                 <input
@@ -127,7 +149,10 @@ export function ContactSection() {
               </div>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="message" className="mono text-xs text-muted-foreground uppercase">
+              <label
+                htmlFor="message"
+                className="mono text-xs text-muted-foreground uppercase"
+              >
                 Message
               </label>
               <textarea
@@ -139,7 +164,11 @@ export function ContactSection() {
             </div>
 
             <div className="flex items-center gap-4">
-              <Button type="submit" disabled={status === "submitting"} className="px-5">
+              <Button
+                type="submit"
+                disabled={status === "submitting"}
+                className="px-5"
+              >
                 {status === "submitting" ? "Sending…" : "Send Message"}
               </Button>
               {status === "error" ? (

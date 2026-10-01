@@ -27,7 +27,8 @@ const items = [
   {
     number: "04",
     title: "Developer Tools & Experiments",
-    description: "Small tools, prototypes, experiments, and technical explorations.",
+    description:
+      "Small tools, prototypes, experiments, and technical explorations.",
     stack: "MCP · Docker · Linux",
   },
 ];

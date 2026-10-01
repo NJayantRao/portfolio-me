@@ -14,7 +14,10 @@ export function CurrentlySection() {
               </span>
               <ul className="mt-4 flex flex-col gap-2.5">
                 {col.items.map((item) => (
-                  <li key={item} className="flex gap-2.5 text-sm text-muted-foreground">
+                  <li
+                    key={item}
+                    className="flex gap-2.5 text-sm text-muted-foreground"
+                  >
                     <span className="mt-1.5 size-1 shrink-0 rounded-full bg-muted-foreground/50" />
                     {item}
                   </li>

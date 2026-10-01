@@ -3,7 +3,13 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { GithubIcon } from "@/components/shared/icons";
 
-function Block({ label, children }: { label: string; children: React.ReactNode }) {
+function Block({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="border-t border-border py-10">
       <span className="mono text-xs tracking-widest text-signal uppercase">

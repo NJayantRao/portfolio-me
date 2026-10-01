@@ -24,8 +24,8 @@ export function JourneySection() {
               the way.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground">
-              I&apos;m especially drawn to backend and systems thinking: how data
-              flows, how services talk to each other, and how AI fits into
+              I&apos;m especially drawn to backend and systems thinking: how
+              data flows, how services talk to each other, and how AI fits into
               software that people actually use. I&apos;m still learning, and I
               like it that way.
             </p>
@@ -52,7 +52,9 @@ export function JourneySection() {
                 key={item.year}
                 className="group grid grid-cols-[3.5rem_1px_1fr] gap-5"
               >
-                <span className="mono pt-1 text-xs text-signal">{item.year}</span>
+                <span className="mono pt-1 text-xs text-signal">
+                  {item.year}
+                </span>
                 <div className="relative flex justify-center">
                   <div className="w-px flex-1 bg-border" />
                   <span className="absolute top-1 size-1.5 -translate-x-1/2 rounded-full bg-signal" />

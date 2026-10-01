@@ -1,4 +1,5 @@
-export type SkillCategory = "Frontend" | "Backend" | "Database" | "AI" | "Tools";
+export type SkillCategory =
+  "Frontend" | "Backend" | "Database" | "AI" | "Tools";
 
 export type Skill = {
   name: string;

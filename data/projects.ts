@@ -85,7 +85,8 @@ export const projects: Project[] = [
     slug: "taskflow-api",
     index: "03",
     title: "TaskFlow API",
-    description: "A backend service for team task management with webhooks and background jobs.",
+    description:
+      "A backend service for team task management with webhooks and background jobs.",
     category: "BACKEND / API",
     technologies: ["Node.js", "Express", "PostgreSQL", "Docker"],
     github: "https://github.com/jayantrao",
@@ -114,7 +115,8 @@ export const projects: Project[] = [
     slug: "mcp-toolkit",
     index: "04",
     title: "MCP Toolkit",
-    description: "A small collection of MCP servers for connecting AI agents to everyday developer tools.",
+    description:
+      "A small collection of MCP servers for connecting AI agents to everyday developer tools.",
     category: "AI / TOOLING",
     technologies: ["TypeScript", "MCP", "Node.js"],
     github: "https://github.com/jayantrao",

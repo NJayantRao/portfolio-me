@@ -15,9 +15,12 @@ export function GithubSection() {
               <GithubIcon className="size-5" />
             </span>
             <div>
-              <p className="font-medium tracking-tight">Open Source & Activity</p>
+              <p className="font-medium tracking-tight">
+                Open Source & Activity
+              </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Most of what I build lives on GitHub, including work in progress.
+                Most of what I build lives on GitHub, including work in
+                progress.
               </p>
             </div>
           </div>

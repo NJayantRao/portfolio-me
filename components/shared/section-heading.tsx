@@ -24,7 +24,9 @@ export function SectionHeading({
       )}
     >
       <div className="flex items-center gap-3">
-        <span className="mono text-xs tracking-widest text-signal">{index}</span>
+        <span className="mono text-xs tracking-widest text-signal">
+          {index}
+        </span>
         <span className="mono text-xs tracking-[0.2em] text-muted-foreground uppercase">
           {label}
         </span>

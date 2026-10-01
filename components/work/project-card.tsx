@@ -51,7 +51,8 @@ export function ProjectCard({
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              <GithubIcon className="size-3" /> {project.github.replace("https://", "")}
+              <GithubIcon className="size-3" />{" "}
+              {project.github.replace("https://", "")}
             </a>
           ) : null}
         </div>

@@ -31,7 +31,9 @@ export function TerminalCard() {
         <span className="size-2.5 rounded-full bg-muted" />
         <span className="size-2.5 rounded-full bg-muted" />
         <span className="size-2.5 rounded-full bg-muted" />
-        <span className="mono ml-2 text-[11px] text-muted-foreground">jayant — zsh</span>
+        <span className="mono ml-2 text-[11px] text-muted-foreground">
+          jayant — zsh
+        </span>
       </div>
       <div className="mono flex flex-col gap-1.5 px-5 py-5 text-[13px] leading-relaxed">
         {LINES.slice(0, visibleCount).map((line, i) => (
@@ -41,7 +43,9 @@ export function TerminalCard() {
             ) : null}
             <span
               className={
-                line.tone === "muted" ? "text-muted-foreground" : "text-foreground"
+                line.tone === "muted"
+                  ? "text-muted-foreground"
+                  : "text-foreground"
               }
             >
               {line.text}
