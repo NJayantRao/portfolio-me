@@ -35,9 +35,10 @@ export function Navbar() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
         <Link
           href="#top"
-          className="flex size-8 items-center justify-center rounded-full border border-border mono text-xs font-medium tracking-wide text-foreground transition-colors hover:border-signal hover:text-signal"
+          className="relative flex size-8 items-center justify-center rounded-full border border-border mono text-xs font-medium tracking-wide text-foreground transition-colors hover:border-signal hover:text-signal"
         >
           {site.initials}
+          <span className="absolute -top-0.5 -right-0.5 size-2 rounded-full border-2 border-background bg-signal" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -56,20 +57,29 @@ export function Navbar() {
           <span className="relative flex size-1.5">
             <span className="absolute inline-flex size-full animate-pulse-dot rounded-full bg-signal" />
           </span>
-          <span className="text-xs text-muted-foreground">Available for work</span>
+          <span className="text-xs text-muted-foreground">
+            Available for work
+          </span>
         </div>
 
         <Sheet>
           <SheetTrigger
             render={
-              <Button variant="ghost" size="icon" aria-label="Open menu" className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label="Open menu"
+                className="md:hidden"
+              >
                 <Menu className="size-4" />
               </Button>
             }
           />
           <SheetContent side="right" className="w-72">
             <SheetHeader>
-              <SheetTitle className="mono text-sm tracking-wide">{site.initials} / Menu</SheetTitle>
+              <SheetTitle className="mono text-sm tracking-wide">
+                {site.initials} / Menu
+              </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-1 px-4 pb-6">
               {navLinks.map((link) => (

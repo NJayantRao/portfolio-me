@@ -6,12 +6,22 @@ export const site = {
   eyebrow: "FULL-STACK DEVELOPER / AI BUILDER",
   summary:
     "I build full-stack applications, backend systems, and AI-powered products — turning ideas into useful software.",
-  location: "BASED IN INDIA",
+  location: "Based in India",
   availability: "OPEN TO COLLABORATION",
   currentFocus: "CURRENTLY BUILDING AI SYSTEMS",
   status: "Computer Science student · Available for collaboration",
   description:
-    "I'm a Computer Science undergraduate at NIST University and a passionate full-stack developer, I enjoy turning ideas into clean, user-friendly applications and solving real-world problems through technology. Driven by curiosity and a love for building, I'm constantly learning, experimenting, and creating meaningful digital products.",
+    "Computer Science undergraduate at NIST University and a passionate full-stack developer, I enjoy turning ideas into clean, user-friendly applications and solving real-world problems through technology. Driven by curiosity and a love for building",
+  points: [
+    "Build clean & scalable systems",
+    "Create real-world web applications",
+    "Keep learning and shipping",
+    "Driven by curiosity & clean code",
+  ],
+  education: {
+    degree: "Computer Science Undergraduate",
+    institution: "NIST University",
+  },
   email: "hello@jayantrao.dev",
   github: "https://github.com/jayantrao",
   linkedin: "https://linkedin.com/in/jayantrao",
