@@ -10,11 +10,8 @@ export const site = {
   availability: "OPEN TO COLLABORATION",
   currentFocus: "CURRENTLY BUILDING AI SYSTEMS",
   status: "Computer Science student · Available for collaboration",
-  facts: [
-    "I'm a Computer Science student at NIST University, maintaining a 9.66 CGPA.",
-    "I build full-stack applications, backend systems, and AI-powered products end to end.",
-    "My interests are in AI Agents, RAG, MCP, and backend architecture — I love understanding how systems work under the hood.",
-  ],
+  description:
+    "I'm a Computer Science undergraduate at NIST University and a passionate full-stack developer, I enjoy turning ideas into clean, user-friendly applications and solving real-world problems through technology. Driven by curiosity and a love for building, I'm constantly learning, experimenting, and creating meaningful digital products.",
   email: "hello@jayantrao.dev",
   github: "https://github.com/jayantrao",
   linkedin: "https://linkedin.com/in/jayantrao",
