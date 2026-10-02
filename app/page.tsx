@@ -5,7 +5,7 @@ import { WorkSection } from "@/components/work/work-section";
 import { LabSection } from "@/components/lab/lab-section";
 import { TechStack } from "@/components/stack/tech-stack";
 import { JourneySection } from "@/components/journey/journey-section";
-import { CurrentlySection } from "@/components/journey/currently-section";
+// import { CurrentlySection } from "@/components/journey/currently-section";
 import { WritingSection } from "@/components/writing/writing-section";
 import { GithubSection } from "@/components/github/github-section";
 import { ContactSection } from "@/components/contact/contact-section";
@@ -23,7 +23,7 @@ export default function Home() {
         <WorkSection />
         {/* <LabSection /> */}
         <JourneySection />
-        <CurrentlySection />
+        {/* <CurrentlySection /> */}
         <WritingSection />
         <GithubSection />
         <ContactSection />
