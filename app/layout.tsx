@@ -17,8 +17,8 @@ const siteUrl = "https://jayantrao.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Jayant Rao — Full-Stack Developer & AI Builder",
-    template: "%s — Jayant Rao",
+    default: "Jayant - Full-Stack Developer",
+    template: "%s - Jayant",
   },
   description:
     "Jayant Rao is a Computer Science student and full-stack developer building web applications, backend systems, and AI-powered products.",
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
     "Backend Engineer",
     "Software Engineer Portfolio",
   ],
-  authors: [{ name: "Jayant Rao" }],
-  creator: "Jayant Rao",
+  authors: [{ name: "N Jayant Rao" }],
+  creator: "N Jayant Rao",
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "Jayant Rao — Full-Stack Developer & AI Builder",
+    title: "N Jayant Rao — Full-Stack Developer",
     description:
       "Building full-stack applications, backend systems, and AI-powered products — turning ideas into useful software.",
     siteName: "Jayant Rao",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jayant Rao — Full-Stack Developer & AI Builder",
+    title: "N Jayant Rao — Full-Stack Developer",
     description:
       "Building full-stack applications, backend systems, and AI-powered products.",
   },

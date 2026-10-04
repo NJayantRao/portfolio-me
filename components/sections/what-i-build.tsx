@@ -43,7 +43,7 @@ export function WhatIBuild() {
         subtitle="Areas where I like turning ideas into working systems."
       />
 
-      <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
+      <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
         {items.map((item, i) => (
           <Reveal key={item.number} delay={i * 80}>
             <div className="group h-full bg-background p-7 transition-colors duration-300 hover:bg-card sm:p-8">

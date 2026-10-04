@@ -15,7 +15,7 @@ export function WritingSection() {
         subtitle="Notes on AI, backend systems, and the things I run into while building."
       />
 
-      <div className="mt-12 flex flex-col">
+      <div className="flex flex-col">
         {posts.map((post, i) => (
           <Reveal key={post.slug} delay={i * 60}>
             <Link

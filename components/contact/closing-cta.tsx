@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function ClosingCta() {
   return (
-    <Section border={false} className="py-16 sm:py-20">
+    <Section border={false} className="pt-0 pb-0">
       <Reveal>
         <div className="flex flex-col items-center gap-6 rounded-2xl border border-border bg-card/30 px-6 py-16 text-center">
           <h2 className="max-w-md text-2xl font-medium tracking-tight text-balance sm:text-3xl">

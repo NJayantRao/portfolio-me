@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Caveat } from "next/font/google";
 import { ArrowUpRight, ArrowDown, Mail } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import { site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
@@ -50,18 +51,6 @@ export function Hero() {
                     sizes="(min-width: 1024px) 380px, 90vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
-                  {/* <Link
-                    href="/profile.jpg"
-                    target="_blank"
-                    aria-label="View full photo"
-                    className="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full bg-background/50 text-foreground backdrop-blur-sm transition-colors hover:bg-background/70"
-                  >
-                    <ArrowUpRight className="size-4" />
-                  </Link> */}
-                  {/* <span className="mono absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full border border-border bg-background/60 px-3 py-1.5 text-[11px] text-foreground backdrop-blur-sm">
-                    <span className="size-1.5 rounded-full bg-signal" />
-                    {site.location}
-                  </span> */}
                 </div>
               </div>
             </div>
@@ -115,22 +104,47 @@ export function Hero() {
                 <Link
                   href={site.github}
                   target="_blank"
-                  className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  aria-label="GitHub"
+                  className="group inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <GithubIcon className="size-4" /> GitHub ↗
+                  <GithubIcon className="size-4" />
+                  <span aria-hidden="true" className="icon-link-label">
+                    GitHub
+                  </span>
                 </Link>
                 <Link
                   href={site.linkedin}
                   target="_blank"
-                  className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="group inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <LinkedinIcon className="size-4" /> LinkedIn ↗
+                  <LinkedinIcon className="size-4" />
+                  <span aria-hidden="true" className="icon-link-label">
+                    LinkedIn
+                  </span>
+                </Link>
+                <Link
+                  href={site.x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X"
+                  className="group inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <FaXTwitter className="size-4" />
+                  <span aria-hidden="true" className="icon-link-label">
+                    X
+                  </span>
                 </Link>
                 <Link
                   href={`mailto:${site.email}`}
-                  className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  aria-label="Email"
+                  className="group inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Mail className="size-4" /> Email ↗
+                  <Mail className="size-4" />
+                  <span aria-hidden="true" className="icon-link-label">
+                    Email
+                  </span>
                 </Link>
               </div>
 

@@ -30,7 +30,7 @@ export function JourneySection() {
         subtitle="The milestones that shaped my path into computer science."
       />
 
-      <div ref={timelineRef} className="relative mx-auto mt-20 max-w-5xl">
+      <div ref={timelineRef} className="relative mx-auto max-w-5xl">
         {/* =====================================================
             TIMELINE
         ===================================================== */}
@@ -52,7 +52,7 @@ export function JourneySection() {
             JOURNEY ITEMS
         ===================================================== */}
 
-        <div className="space-y-20 md:space-y-28">
+        <div className="space-y-16 md:space-y-20">
           {journey.map((item, index) => {
             const isLeft = index % 2 === 0;
             const isCurrent = index === 0;
@@ -126,6 +126,10 @@ function TimelineItem({
     [Math.max(0, threshold - 0.08), threshold],
     ["rgba(255,255,255,0.15)", "var(--signal)"]
   );
+
+  const glowOpacity = useTransform(nodeProgress, [0, 1], [0, 0.2]);
+  const inactiveDotOpacity = useTransform(nodeProgress, [0, 1], [1, 0]);
+  const pulseOpacity = useTransform(nodeProgress, [0, 1], [0, 0.8]);
 
   return (
     <motion.div
@@ -219,7 +223,7 @@ function TimelineItem({
         <motion.div
           className="absolute -inset-3 rounded-full bg-signal blur-md"
           style={{
-            opacity: useTransform(nodeProgress, [0, 1], [0, 0.2]),
+            opacity: glowOpacity,
           }}
         />
 
@@ -234,7 +238,7 @@ function TimelineItem({
           <motion.span
             className="absolute size-2 rounded-full bg-muted-foreground"
             style={{
-              opacity: useTransform(nodeProgress, [0, 1], [1, 0]),
+              opacity: inactiveDotOpacity,
             }}
           />
 
@@ -251,7 +255,7 @@ function TimelineItem({
             <motion.span
               className="absolute -inset-2 rounded-full border border-signal/30"
               style={{
-                opacity: useTransform(nodeProgress, [0, 1], [0, 0.8]),
+                opacity: pulseOpacity,
               }}
               animate={{
                 scale: [1, 1.25, 1],

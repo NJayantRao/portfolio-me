@@ -20,7 +20,7 @@ export function LabSection() {
         subtitle="Experiments, ideas, and things I'm currently figuring out."
       />
 
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {experiments.map((exp, i) => (
           <Reveal key={exp.id} delay={(i % 3) * 90}>
             <div className="group flex h-full flex-col justify-between rounded-xl border border-border bg-card/30 p-6 transition-colors duration-300 hover:bg-card">

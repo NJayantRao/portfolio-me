@@ -13,7 +13,7 @@ export function TechStack() {
         subtitle="Technologies I reach for, organized by where they fit."
       />
 
-      <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="mx-auto grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {skills.map((skill) => (
           <div
             key={skill.name}

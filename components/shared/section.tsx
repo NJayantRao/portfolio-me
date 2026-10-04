@@ -15,12 +15,14 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "scroll-mt-20 py-20 sm:py-28",
+        "scroll-mt-20 py-16 sm:py-20 lg:py-24",
         border && "border-t border-border",
         className
       )}
     >
-      <div className="mx-auto w-full max-w-6xl px-6 sm:px-8">{children}</div>
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 sm:px-8">
+        {children}
+      </div>
     </section>
   );
 }

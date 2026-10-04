@@ -60,7 +60,7 @@ export function ContactSection() {
         </div>
       </Reveal>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal delay={100}>
           <div className="flex flex-col gap-5">
             <div className="flex flex-wrap items-center gap-3">

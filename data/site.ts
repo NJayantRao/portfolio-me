@@ -22,16 +22,16 @@ export const site = {
     degree: "Computer Science Undergraduate",
     institution: "NIST University",
   },
-  email: "hello@jayantrao.dev",
-  github: "https://github.com/jayantrao",
-  linkedin: "https://linkedin.com/in/jayantrao",
+  email: "njayantrao@gmail.com",
+  github: "https://github.com/NJayantRao",
+  linkedin: "https://www.linkedin.com/in/n-jayant-rao",
+  x: "https://x.com/Jayant_dot_io",
   resume: "/resume.pdf",
 };
 
 export const navLinks = [
+  { label: "Stack", href: "#stack" },
   { label: "Work", href: "#work" },
-  { label: "Lab", href: "#lab" },
   { label: "About", href: "#about" },
-  { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" },
 ];
